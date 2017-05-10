@@ -1,0 +1,34 @@
+{
+  "draw":3,
+  "recordsTotal": 200,
+  "recordsFiltered": 20,
+  "data": [
+    {
+      "id": 1,
+      "policy_name": "温度过高",
+      "policy_level": "FATAL",
+      "policy_metric":"TEMP",
+      "portal":{
+        "gt":80
+       },
+      "duration":"13234324",
+      "nodes":["c01n07"],
+      "policy_email":["xxx@qq.com","xxx@qq.com"],
+      "policy_sms":["12124214","12124214"],
+      "status": "ON"
+    },{
+      "id": 2,
+      "policy_name": "CPU使用率过高",
+      "policy_level": "ERROR",
+      "policy_metric":"CPU",
+      "portal":{
+        "eq":80
+       },
+      "duration":"13234324",
+      "nodes":["c01n07"],
+      "policy_email":["xxx@qq.com","xxx@qq.com"],
+      "policy_sms":["12124214","12124214"],
+      "status": "OFF"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+/*
+ * © Copyright Lenovo 2015.
+ *
+ * LIMITED AND RESTRICTED RIGHTS NOTICE:
+ *
+ * If data or software is delivered pursuant a General Services Administration
+ * "GSA" contract, use, reproduction, or disclosure is subject to
+ * restrictions set forth in Contract No. GS-35F-05925.
+*/
+.new_operationLog_icon{background-image: url('/static/js/customUI/monitor/resource/operation_log.png');}
+.log_details{}
+.log_details:hover{cursor:pointer;border-radius:5px;border:1px solid #c9c9c9;padding-top:3px;padding-bottom:3px;padding-left:3px;padding-right: 3px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#b8c4cb,endColorStr=red); /*IE 6 7 8*/ 
+
+background: -ms-linear-gradient(top, #ffffff , #cccccc);        /* IE 10 */
+
+background:-moz-linear-gradient(top,#ffffff, #cccccc);/*火狐*/ 
+
+background:-webkit-gradient(linear, 0% 0%, 0% 100%,from( #ffffff), to(#cccccc));/*谷歌*/ 
+
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#cccccc));      /* Safari 4-5, Chrome 1-9*/
+
+background: -webkit-linear-gradient(top, #ffffff, #cccccc );   /*Safari5.1 Chrome 10+*/
+
+background: -o-linear-gradient(top, #ffffff, #cccccc );  /*Opera 11.10+*/
+
+} 
+.log_details_myModal_body{width:500px;min-height:200px;border: 2px solid #e5e5e5;border-radius: 10px;margin:50px;margin-top:0px;margin-bottom:30px;padding:18px;}
+.operation_log_close{margin-top:5px !important;margin-right:10px !important;}

@@ -1,0 +1,121 @@
+<div class="s-ctrl-content">
+	<div class="strategy-button-box clearfix">
+		<div class="btn-group mb18">
+			<button class="btn btn-primary mr" id="alarm_script_upload">
+				<span class="strategy_icon strategy_script_upload"></span> {{nls.alarm_script_upload}}</button>
+            <button class="btn btn-primary" id="alarm_script_delete" disabled>
+                <span class="strategy_icon strategy_script_delete"></span> {{nls.alarmdelete}}</button>
+		</div>
+	</div>
+	<div class="dataTable_wrapper">
+		<table class="table table-striped table-hover" style="width:100%;" id="alarm_script_table"></table>
+	</div>
+    <div class="layui-layer-move alarm_script_layui">
+        <div class="layui-layer-content"></div>
+    </div>
+</div>
+<!--脚本上传模态框-->
+<div class="modal fade" id="alarm_script_upload_modle" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="true">
+    <div class="modal-dialog modal-overall">
+        <div class="modal-content modal-content-overall">
+            <div class="modal-header modal-header-overall">
+                <h4 class="modal-title">{{nls.alarm_policyscript}}{{nls.alarm_script_upload}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row pl30">
+                    <div class="col-sm-12">
+                        <div class="tips-content">
+                            <form enctype="multipart/form-data" id="form">
+                                <p class="form-group clearfix">
+                                <div class="col-sm-2  line30 text-right">{{nls.set_script_file}}</div>
+                                <div class="col-sm-6 line30">
+                                    <input type="text" size="20" name="upfile" id="upfile" class="form-control col-sm-6" placeholder="{{nls.alarm_script_fileText}}" readonly>
+                                </div>
+
+                                <div class="col-sm-2 btn-group mb18">
+
+                                    <input type="button" class="btn btn-primary" value={{nls.see}} onclick="choose.click()" style="height: 30px;">
+                                </div>
+                                <input type="file" name="choose" id="choose" style="display:none">
+                                <!--<input type="file" name="choose" id="choose" style="display:none" onchange="upfile.value=this.value">-->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer modal-footer-overall">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="btn btn-primary btn-narrowModal" id="alarm_upload_confirm">
+                            {{nls.confirm}}</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn btn-default btn-narrowModal" data-dismiss="modal">{{nls.cancel}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--重命名模态框-->
+<div class="modal fade" id="alarm_script_rename_modle" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="true">
+    <div class="modal-dialog modal-overall">
+        <div class="modal-content modal-content-overall">
+            <div class="modal-header modal-header-overall">
+                <h4 class="modal-title">{{nls.alarm_script_rename_title}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row pl30">
+                    <div class="col-sm-12">
+                        <div class="tips-content">
+                            <div id="g_off_id"><form>
+                                <input id="alarm_script_rename_text" placeholder={{nls.alarm_script_rename_text}}>
+                            </form></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer modal-footer-overall">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="btn btn-primary btn-narrowModal" id="alarm_script_rename_btn">
+                            {{nls.preservation}}</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn btn-default btn-narrowModal" data-dismiss="modal">{{nls.cancel}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--删除模态框-->
+<div class="modal fade" id="delete_script_modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="true">
+    <div class="modal-dialog modal-overall">
+        <div class="modal-content modal-content-overall">
+            <div class="modal-header modal-header-overall">
+                <h4 class="modal-title">{{nls.alarmwarn}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row pl30">
+                    <div class="col-sm-12">
+                        <div class="tips-content">
+                            <div id="delete_alarm_text">{{nls.alarm_script_warn}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer modal-footer-overall">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="btn btn-primary btn-narrowModal" id="delete_alarm_policy">
+                            {{nls.alarmdelete}}</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn btn-default btn-narrowModal" data-dismiss="modal">{{nls.cancel}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+<!--
+/*
+ * © Copyright Lenovo 2015.
+ *
+ * LIMITED AND RESTRICTED RIGHTS NOTICE:
+ *
+ * If data or software is delivered pursuant a General Services Administration
+ * "GSA" contract, use, reproduction, or disclosure is subject to
+ * restrictions set forth in Contract No. GS-35F-05925.
+*/
+-->
+<div class="select_status_outter_outter_outter">
+	<div  class="select_status_outter_outter">
+		<div  class="select_status_outter">{{nls.job}}</div>
+			<select id="select_status">
+				<option value="uncompleted">{{nls.uncompleted}}</option>
+				<option value="completed">{{nls.finished}}</option>
+			</select>
+			<select id="select_time" >
+				<option value="3600">{{nls.last_hour}}</option>
+				<option value="86400">{{nls.last_day}}</option>
+				<option value="604800">{{nls.last_7_days}}</option>
+				<option value="2592000">{{nls.last_30_days}}</option>
+			</select>
+			<select id="select_queue" >
+				<option value="all">{{nls.all_queues}}</option>
+			</select>
+	</div>
+	<hr >
+	
+	<div  class="job_chart_running_icon_upper" >
+		<div id="job_chart_running_icon">
+			<div id="job_chart_running_icon_text" >{{nls.running}}</div>
+			<div id="job_chart_running_icon_position" ></div>
+		</div>
+		<div id="job_chart_waiting_icon">
+			<div id="job_chart_waiting_icon_text">{{nls.waiting}}</div>
+			<div id="job_chart_waiting_icon_position"></div>
+		</div>
+		<div id="job_chart_finish_icon" >
+			<div id="job_chart_finish_icon_text">{{nls.finished}}</div>
+		    <div id="job_chart_finish_icon_position"></div>
+		</div>
+	</div>
+	
+	<div id="basic">
+		<div class="job_chart" ></div>
+	</div>
+</div>

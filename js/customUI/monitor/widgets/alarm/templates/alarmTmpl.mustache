@@ -1,0 +1,135 @@
+<div class="alarm-body">
+	<div class="alarm-title">
+		 <div class="alarm-icon-t"></div>
+		 <h3 class="alarm-title-text">{{nls.alarm-title}}</h3>
+	</div>
+	<div class="alarm-tab-box">
+	    <div class="AlarmTab">
+	        <span id="currentAlarm" class="AlarmBtn active">{{nls.current}}</span>
+	        <span id="historyAlarm" class="AlarmBtn">{{nls.history}}</span>
+	    </div>
+    </div>
+	<div class="alarm-button-box clearfix">
+		<div class="alarm-btn-left">
+			<div class="btn-group current-confirm">
+				<button class="btn btn-primary" default="confirm" disabled>
+					<span class="alarm_icon alarm_confirm"></span> {{nls.remarks_confirm}}</button>
+			</div>
+			<div class="btn-group">
+				<button class="btn btn-primary" default="solve" disabled>
+					<span class="alarm_icon alarm_solve"></span> {{nls.solvebtn}}</button>
+			</div>
+			<div class="btn-group">
+				<button class="btn btn-primary" default="delete" disabled>
+					<span class="alarm_icon alarm_delete"></span> {{nls.alarmdelete}}</button>
+			</div>
+		</div>
+		<select class="alarm-select-type" id="alarmLevel">
+			<option value="">{{nls.all}}</option>
+			<option value="50">{{nls.fatal}}</option>
+			<option value="40">{{nls.error}}</option>
+			<option value="30">{{nls.warn}}</option>
+			<option value="20">{{nls.info}}</option>
+		</select>
+		<div class="alarm-time-range clearfix">
+			<div class="alarm-time-box">
+				<input type="text" id="alarmHistoryBeginTime" placeholder={{nls.start_time}}>
+				<img src="/static/js/customUI/monitor/widgets/alarm/img/time_blog20.png" />
+			</div>
+			<div class="alarm-time-box alarm-time-bar">
+			</div>
+			<div class="alarm-time-box">
+				<input type="text" id="alarmHistoryEndTime" class="ml10" placeholder={{nls.end_time}}>
+				<img src="/static/js/customUI/monitor/widgets/alarm/img/time_blog20.png" />
+			</div>
+		</div>
+		<div class="alarm-search">
+			<input type="text" placeholder={{nls.phsearch}} id="alarmSearchText">
+			<div class="btn-group alarm-search-icon">
+				<button class="btn btn-primary" id="alarmSearchBtn">
+					<span class="alarm_icon alarm_search16"></span> {{nls.search}}</button>
+			</div>
+		</div>
+		<div class="alarm-btn-right">
+			<div class="btn-group current-all-confirm">
+				<button class="btn btn-primary" default="confirm">
+					<span class="alarm_icon alarm_confirm_all"></span> {{nls.confirm_all}}</button>
+			</div>
+			<div class="btn-group">
+				<button class="btn btn-primary" default="solve">
+					<span class="alarm_icon alarm_solve_all"></span> {{nls.solve_all}}</button>
+			</div>
+			<div class="btn-group">
+				<button class="btn btn-primary" default="delete">
+					<span class="alarm_icon alarm_delete_all"></span> {{nls.delete_all}}</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="dataTable_wrapper">
+		<table class="table table-striped table-hover" style="width:100%;" id="alarmTable"></table>
+	</div>
+</div>
+
+
+<div class="modal fade" id="delete_all_modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="true">
+    <div class="modal-dialog modal-overall">
+        <div class="modal-content modal-content-overall">
+            <div class="modal-header modal-header-overall">
+                <h4 class="modal-title">{{nls.alarmwarn}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row pl30">
+                    <div class="col-sm-12">
+                        <div class="tips-content">
+                            <div id="g_off_id"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer modal-footer-overall">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="btn btn-primary btn-narrowModal" id="delete_all">
+                        </button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn btn-default btn-narrowModal" data-dismiss="modal">{{nls.cancel}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--备注模态框-->
+<div class="modal fade" id="remarks_modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="true">
+    <div class="modal-dialog modal-overall">
+        <div class="modal-content modal-content-overall">
+            <div class="modal-header modal-header-overall">
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="row pl30">
+                    <div class="col-sm-12">
+                        <div class="tips-content">
+                            <div id="g_off_id"><form>
+                                <textarea id="remarks_text" placeholder={{nls.remarks_text}}></textarea>
+                            </form></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer modal-footer-overall">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="btn btn-primary btn-narrowModal" id="remarks_confirm">
+                        {{nls.remarks_confirm}}</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn btn-default btn-narrowModal" data-dismiss="modal">{{nls.cancel}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

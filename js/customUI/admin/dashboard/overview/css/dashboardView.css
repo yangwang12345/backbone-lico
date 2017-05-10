@@ -1,0 +1,556 @@
+/*
+ * © Copyright Lenovo 2015.
+ *
+ * LIMITED AND RESTRICTED RIGHTS NOTICE:
+ *
+ * If data or software is delivered pursuant a General Services Administration
+ * "GSA" contract, use, reproduction, or disclosure is subject to
+ * restrictions set forth in Contract No. GS-35F-05925.
+*/
+
+/******************不同的浏览器的分辨率适配代码*******************/
+
+
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+	.sliding-window-container_small_screen{margin-top:-10% !important;}
+	#history-tab-panel_down{height:120px !important;}
+	/*用户字定义模板*/
+	
+	#select_mainContainer_top_out{height:92% !important;}
+	
+	/*文件管理页面*/
+	
+    #user-files{height:460px !important;}
+   
+
+}
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+	#history-tab-panel_down{height:160px !important;}
+	/*用户字定义模板*/
+	
+	#select_mainContainer_top_out{height:92% !important;}
+	
+	/*文件管理页面*/
+	
+    #user-files{height:460px !important;}
+  
+
+}
+@media only screen and (min-width: 1300px) and (max-width: 1450px) {
+	.sliding-window-container_small_screen{margin-top:-10% !important;}
+}
+/************************************************************************************************************************************************************/
+
+
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 1400px) and (max-width: 1563px) {
+
+	
+	
+	
+	
+	
+	
+	
+	
+}
+/************************************************************************************************************************************************************/
+
+
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 1601px) and (max-width: 1700px) {
+	.sliding-window-container_small_screen{margin-top:15% !important;}
+	/*默认高度为1050px*/
+	/*image of bar*/
+    .admin-resource-cell{height:294px !important;padding-top:35px !important;}
+    .banner-slider{height:208px!important;}
+    #clusterCPU-area{height:105px !important;}
+    #clusterMemory-area{height:105px !important;}
+    #storage-area{height:105px !important;}
+    
+    #job_chart_admin{height:500px !important;}
+    .job_chart{height:400px ;}
+    #node_chart_admin{height:500px !important;}
+    #nodesOverview{height:400px !important;}
+	
+
+	
+	/*user page*/
+    .resource-container{height:294px !important;padding-top:35px !important;}
+ /*   #job_submit_start{margin-top:35px;}*/
+    #myCarousel{width:201px;height:198px !important;}
+    .item{width:201px;height:198px !important;}
+    #job-area{height:210px !important;}
+
+    /*作业详情图*/
+
+    
+    /*文件管理页面*/
+    #user-files{height:750px !important;}
+}
+/************************************************************************************************************************************************************/
+
+
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 1701px) and (max-width: 1800px) {
+	.sliding-window-container_small_screen{margin-top:15% !important;}
+	/*默认高度为1050px*/
+	/*image of bar*/
+    .admin-resource-cell{height:294px !important;padding-top:35px !important;}
+    .banner-slider{height:208px!important;}
+    #clusterCPU-area{height:105px !important;}
+    #clusterMemory-area{height:105px !important;}
+    #storage-area{height:105px !important;}
+    
+    #job_chart_admin{height:500px !important;}
+    .job_chart{height:400px ;}
+    #node_chart_admin{height:500px !important;}
+    #nodesOverview{height:400px !important;}
+	
+	/*user page*/
+    .resource-container{height:294px !important;padding-top:35px !important;}
+    /*#job_submit_start{margin-top:35px;}*/
+    #myCarousel{width:201px;height:198px !important;}
+    .item{width:201px;height:198px !important;}
+    #job-area{height:210px !important;}
+
+    /*作业详情图*/
+
+    
+    /*文件管理页面*/
+    #user-files{height:750px !important;}
+}
+/************************************************************************************************************************************************************/
+
+
+
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 1801px) and (max-width: 1900px) {
+	
+	.sliding-window-container_small_screen{margin-top:15% !important;}
+	/*默认高度为1050px*/
+	/*image of bar*/
+    .admin-resource-cell{height:294px !important;padding-top:35px !important;}
+    .banner-slider{height:208px!important;}
+    #clusterCPU-area{height:105px !important;}
+    #clusterMemory-area{height:105px !important;}
+    #storage-area{height:105px !important;}
+    
+    #job_chart_admin{height:500px !important;}
+    .job_chart{height:400px ;}
+    #node_chart_admin{height:500px !important;}
+    #nodesOverview{height:400px !important;}
+
+	/*user page*/
+    .resource-container{height:294px !important;padding-top:35px !important;}
+   /* #job_submit_start{margin-top:35px;}*/
+    #myCarousel{width:201px;height:198px !important;}
+    .item{width:201px;height:198px !important;}
+    #job-area{height:210px !important;}
+
+    /*作业详情图*/
+
+    
+    /*文件管理页面*/
+    #user-files{height:750px !important;}
+}
+/************************************************************************************************************************************************************/
+
+
+
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 1901px) and (max-width: 2000px) {
+	
+	.sliding-window-container_small_screen{margin-top:15% !important;}
+	/*默认高度为1200px*/
+	/*image of bar*/
+    .admin-resource-cell{height:336px !important;padding-top:40px !important;}
+    .banner-slider{height:223px!important;}
+    #clusterCPU-area{height:120px !important;}
+    #clusterMemory-area{height:120px !important;}
+    #storage-area{height:120px !important;}
+    
+    #job_chart_admin{height:500px !important;}
+    .job_chart{height:400px ;}
+    #node_chart_admin{height:500px !important;}
+    #nodesOverview{height:400px !important;} 
+
+	
+	/*user page*/
+    .resource-container{height:336px !important;padding-top:40px !important;}
+    #job_submit_start{margin-top:40px;}
+    #myCarousel{width:201px;height:213px !important;}
+    .item{width:201px;height:213px !important;}
+    #job-area{height:240px !important;}
+
+    /*作业详情图*/
+
+    
+    /*文件管理页面*/
+    #user-files{height:900px !important;}
+    
+    .jobs_select_templates{height:800px !important;}
+    .jobs_select_templates_content{height:800px !important;}
+}
+/************************************************************************************************************************************************************/
+
+
+
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 2001px) and (max-width: 2100px) {
+	
+	.sliding-window-container_small_screen{margin-top:15% !important;}
+	/*默认高度为1200px*/
+	/*image of bar*/
+    .admin-resource-cell{height:336px !important;padding-top:40px !important;}
+    .banner-slider{height:223px!important;}
+    #clusterCPU-area{height:120px !important;}
+    #clusterMemory-area{height:120px !important;}
+    #storage-area{height:120px !important;}
+    
+    #job_chart_admin{height:500px !important;}
+    .job_chart{height:400px ;}
+    #node_chart_admin{height:500px !important;}
+    #nodesOverview{height:400px !important;} 
+
+	
+	/*user page*/
+    .resource-container{height:336px !important;padding-top:40px !important;}
+    #job_submit_start{margin-top:40px;}
+    #myCarousel{width:201px;height:213px !important;}
+    .item{width:201px;height:213px !important;}
+    #job-area{height:240px !important;}
+
+    /*作业详情图*/
+
+    
+    /*文件管理页面*/
+    #user-files{height:900px !important;}
+    
+    .jobs_select_templates{height:800px !important;}
+    .jobs_select_templates_content{height:800px !important;}
+}
+/************************************************************************************************************************************************************/
+
+
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 2101px) and (max-width: 2200px) {
+	
+	.sliding-window-container_small_screen{margin-top:15% !important;}
+	/*默认高度为1200px*/
+	/*image of bar*/
+    .admin-resource-cell{height:336px !important;padding-top:40px !important;}
+    .banner-slider{height:223px!important;}
+    #clusterCPU-area{height:120px !important;}
+    #clusterMemory-area{height:120px !important;}
+    #storage-area{height:120px !important;}
+    
+    #job_chart_admin{height:500px !important;}
+    .job_chart{height:400px ;}
+    #node_chart_admin{height:500px !important;}
+    #nodesOverview{height:400px !important;} 
+	
+
+	
+	/*user page*/
+    .resource-container{height:336px !important;padding-top:40px !important;}
+    #job_submit_start{margin-top:40px;}
+    #myCarousel{width:201px;height:213px !important;}
+    .item{width:201px;height:213px !important;}
+    #job-area{height:240px !important;}
+
+    /*作业详情图*/
+
+    /*文件管理页面*/
+    #user-files{height:900px !important;}
+    
+    .jobs_select_templates{height:800px !important;}
+    .jobs_select_templates_content{height:800px !important;}
+}
+/************************************************************************************************************************************************************/
+
+
+
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 2201px) and (max-width: 2300px) {
+	
+	.sliding-window-container_small_screen{margin-top:15% !important;}
+	/*默认高度为1440px*/
+	/*image of bar*/
+    .admin-resource-cell{height:420px !important;padding-top:50px !important;}
+    .banner-slider{height:250px!important;}
+    #clusterCPU-area{height:150px !important;}
+    #clusterMemory-area{height:150px !important;}
+    #storage-area{height:150px !important;}
+    
+    #job_chart_admin{height:600px !important;}
+    .job_chart{height:500px ;}
+    #node_chart_admin{height:600px !important;}
+    #nodesOverview{height:500px !important;}   
+	
+
+	
+	/*user page*/
+    .resource-container{height:420px !important;padding-top:50px !important;}
+    #job_submit_start{margin-top:50px;}
+    #myCarousel{width:201px;height:250px !important;}
+    .item{width:201px;height:250px !important;}
+    #job-area{height:300px !important;}
+
+
+    /*作业详情图*/
+ 
+    /*文件管理页面*/
+    #user-files{height:1100px !important;}
+    /*用户自定义模板*/
+   
+  
+    .jobs_select_templates{height:1200px !important;}
+    .jobs_select_templates_content{height:1200px !important;}
+}
+/************************************************************************************************************************************************************/
+
+
+
+
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 2301px) and (max-width: 2400px) {
+	
+	.sliding-window-container_small_screen{margin-top:15% !important;}
+	/*默认高度为1440px*/
+	/*image of bar*/
+    .admin-resource-cell{height:420px !important;padding-top:50px !important;}
+    .banner-slider{height:250px!important;}
+    #clusterCPU-area{height:150px !important;}
+    #clusterMemory-area{height:150px !important;}
+    #storage-area{height:150px !important;}
+    
+    #job_chart_admin{height:600px !important;}
+    .job_chart{height:500px ;}
+    #node_chart_admin{height:600px !important;}
+    #nodesOverview{height:500px !important;}
+	
+
+	/*user page*/
+    .resource-container{height:420px !important;padding-top:50px !important;}
+    #job_submit_start{margin-top:50px;}
+    #myCarousel{width:201px;height:250px !important;}
+    .item{width:201px;height:250px !important;}
+    #job-area{height:300px !important;}
+
+    /*作业详情图*/
+
+    /*文件管理页面*/
+    #user-files{height:1100px !important;}
+    /*用户自定义模板*/
+  
+    .jobs_select_templates{height:1200px !important;}
+    .jobs_select_templates_content{height:1200px !important;}
+}
+/************************************************************************************************************************************************************/
+
+
+
+
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 2401px) and (max-width: 2500px) {
+	
+	.sliding-window-container_small_screen{margin-top:15% !important;}
+	/*默认高度为1440px*/
+	/*image of bar*/
+
+    .admin-resource-cell{height:420px !important;padding-top:50px !important;}
+    .banner-slider{height:250px!important;}
+    #clusterCPU-area{height:150px !important;}
+    #clusterMemory-area{height:150px !important;}
+    #storage-area{height:150px !important;}
+    
+    #job_chart_admin{height:600px !important;}
+    .job_chart{height:500px ;}
+    #node_chart_admin{height:600px !important;}
+    #nodesOverview{height:500px !important;}
+	
+
+	
+	/*user page*/
+    .resource-container{height:420px !important;padding-top:50px !important;}
+    #job_submit_start{margin-top:50px;}
+    #myCarousel{width:201px;height:250px !important;}
+    .item{width:201px;height:250px !important;}
+    #job-area{height:300px !important;}
+
+    /*作业详情图*/
+
+    /*文件管理页面*/
+    #user-files{height:1100px !important;}
+    
+    /*用户自定义模板*/
+   
+    .jobs_select_templates{height:1200px !important;}
+    .jobs_select_templates_content{height:1200px !important;}
+}
+/************************************************************************************************************************************************************/
+
+
+
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 2501px) and (max-width: 2600px) {
+	
+	.sliding-window-container_small_screen{margin-top:15% !important;}
+	/*默认高度为1440px*  1.5times/
+	/*image of bar*/
+
+    .admin-resource-cell{height:420px !important;padding-top:50px !important;}
+    .banner-slider{height:250px!important;}
+    #clusterCPU-area{height:150px !important;}
+    #clusterMemory-area{height:150px !important;}
+    #storage-area{height:150px !important;}
+    
+    #job_chart_admin{height:600px !important;}
+    .job_chart{height:500px ;}
+    #node_chart_admin{height:600px !important;}
+    #nodesOverview{height:500px !important;}
+	
+
+	
+	/*user page*/
+    .resource-container{height:420px !important;padding-top:50px !important;}
+    #job_submit_start{margin-top:50px;}
+    #myCarousel{width:201px;height:250px !important;}
+    .item{width:201px;height:250px !important;}
+    #job-area{height:300px !important;}
+    /*作业详情图*/
+
+
+   /*文件管理页面*/
+    #user-files{height:1100px !important;}
+    
+    /*用户自定义模板*/
+   
+    .jobs_select_templates{height:1100px !important;}
+    .jobs_select_templates_content{height:1100px !important;}
+}
+/************************************************************************************************************************************************************/
+
+
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 2601px) and (max-width: 2700px) {
+	
+	.sliding-window-container_small_screen{margin-top:15% !important;}
+	/*默认高度为1600px*/
+	/*image of bar*/
+    .admin-resource-cell{height:483px !important;padding-top:58px !important;}
+    .banner-slider{height:288px!important;}
+    #clusterCPU-area{height:173px !important;}
+    #clusterMemory-area{height:173px !important;}
+    #storage-area{height:173px !important;}
+    
+    #job_chart_admin{height:690px !important;}
+    .job_chart{height:575px ;}
+    #node_chart_admin{height:690px !important;}
+    #nodesOverview{height:575px !important;}
+	
+
+	
+	/*user page*/
+    .resource-container{height:483px !important;padding-top:58px !important;}
+    #job_submit_start{margin-top:58px;}
+    #myCarousel{width:201px;height:288px !important;}
+    .item{width:201px;height:288px !important;}
+    #job-area{height:345px !important;}
+
+    /*作业详情图*/
+
+    
+    /*文件管理页面*/
+    #user-files{height:1300px !important;}
+    
+    /*用户自定义模板*/
+   
+    .jobs_select_templates{height:1200px !important;}
+    .jobs_select_templates_content{height:1200px !important;}
+}
+/************************************************************************************************************************************************************/
+
+
+
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 2701px) and (max-width: 2800px) {
+	
+	.sliding-window-container_small_screen{margin-top:15% !important;}
+	/*默认高度为1600px*/
+	/*image of bar*/
+    .admin-resource-cell{height:483px !important;padding-top:58px !important;}
+    .banner-slider{height:288px!important;}
+    #clusterCPU-area{height:173px !important;}
+    #clusterMemory-area{height:173px !important;}
+    #storage-area{height:173px !important;}
+    
+    #job_chart_admin{height:690px !important;}
+    .job_chart{height:575px ;}
+    #node_chart_admin{height:690px !important;}
+    #nodesOverview{height:575px !important;}
+	
+
+	
+	/*user page*/
+    .resource-container{height:483px !important;padding-top:58px !important;}
+    #job_submit_start{margin-top:58px;}
+    #myCarousel{width:201px;height:288px !important;}
+    .item{width:201px;height:288px !important;}
+    #job-area{height:345px !important;}
+
+    /*作业详情图*/
+
+    
+   /*文件管理页面*/
+    #user-files{height:1300px !important;}
+    
+    /*用户自定义模板*/
+   
+    .jobs_select_templates{height:1200px !important;}
+    .jobs_select_templates_content{height:1200px !important;}
+}
+/************************************************************************************************************************************************************/
+
+
+/************************************************************************************************************************************************************/
+@media only screen and (min-width: 2801px) and (max-width: 2900px) {
+	
+	.sliding-window-container_small_screen{margin-top:15% !important;}
+	/*默认高度为1600px*/
+	/*image of bar*/
+    .admin-resource-cell{height:483px !important;padding-top:58px !important;}
+    .banner-slider{height:288px!important;}
+    #clusterCPU-area{height:173px !important;}
+    #clusterMemory-area{height:173px !important;}
+    #storage-area{height:173px !important;}
+    
+    #job_chart_admin{height:690px !important;}
+    .job_chart{height:575px ;}
+    #node_chart_admin{height:690px !important;}
+    #nodesOverview{height:575px !important;}
+	
+
+	
+	/*user page*/
+    .resource-container{height:483px !important;padding-top:58px !important;}
+    #job_submit_start{margin-top:58px;}
+    #myCarousel{width:201px;height:288px !important;}
+    .item{width:201px;height:288px !important;}
+    #job-area{height:345px !important;}
+
+    /*作业详情图*/
+ 
+    
+    /*文件管理页面*/
+    #user-files{height:1300px !important;}
+    
+    /*用户自定义模板*/
+   
+    .jobs_select_templates{height:1200px !important;}
+    .jobs_select_templates_content{height:1200px !important;}
+}
+/************************************************************************************************************************************************************/

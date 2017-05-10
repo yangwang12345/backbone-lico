@@ -1,0 +1,51 @@
+<!--
+/*
+ * © Copyright Lenovo 2015.
+ *
+ * LIMITED AND RESTRICTED RIGHTS NOTICE:
+ *
+ * If data or software is delivered pursuant a General Services Administration
+ * "GSA" contract, use, reproduction, or disclosure is subject to
+ * restrictions set forth in Contract No. GS-35F-05925.
+*/
+-->
+<div class="admin-users-title" style="margin-bottom:0px;padding-left:20px;padding-right:20px;border:0px solid #eeeeee;">
+   <div style="width:100%;height:100%;border-bottom:1px solid #eeeeee;">
+		 <div class="new_monitor_icon new_jobMonitor_icon"></div><h3 class="overall-heading">{{nls.jobMonitor}}</h3>
+	</div>	 
+
+</div class="col-md-12" >
+
+    <div class="jobMonitor_chart" id="alarm_jobMonitor_chart"></div>
+    
+    
+{{!作业运行表格}}    
+    <div class="jobMonitor_table">
+        <div class="panel panel-default" style="border:1px solid #e2e2e2;">
+	         <div class="panel-heading jobMonitor_heading" style="height:30px !important;line-height:15px;">
+	         
+	                <a style=" font-size:14px;color: rgb(0, 0, 0) ;cursor:pointer;" id="running_job_btn"><span>{{nls.running}}</span>&nbsp;<span  id="totle_running">0</span>&nbsp;</a>&nbsp;&nbsp;&nbsp;<span>|</span> &nbsp;&nbsp;&nbsp;
+                    <a style=" font-size:14px;color: rgb(51, 122, 183);cursor:pointer;" id="waiting_job_btn"><span>{{nls.waiting}}</span>&nbsp;<span id="totle_waiting">0</span>&nbsp;</a>&nbsp;&nbsp;&nbsp;<span>|</span> &nbsp;&nbsp;&nbsp;
+		            <a style=" font-size:14px;color: rgb(51, 122, 183);cursor:pointer;" id="finished_history_btn" ><span>{{nls.finishing}}</span>&nbsp;<span id="totle_finishing">0</span>&nbsp;</a>
+
+	         </div>
+	         <div class="panel-body">
+		                <div class="row">
+		                    <div class="col-md-12">
+			                       <div class="dataTable_wrapper" id="listNodesTable_wrapper_only_jobs" style="margin-top:10px;width:100%;"></div>
+			                       <div class="g_select_all" id="g_select_all"></div>
+		                    </div>
+	                    </div>
+	         </div>
+        </div>
+   </div>
+{{!作业运行表格}}  
+
+
+<div>
+
+
+</div>
+
+
+

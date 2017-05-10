@@ -1,0 +1,520 @@
+/*
+ * © Copyright Lenovo 2015.
+ *
+ * LIMITED AND RESTRICTED RIGHTS NOTICE:
+ *
+ * If data or software is delivered pursuant a General Services Administration
+ * "GSA" contract, use, reproduction, or disclosure is subject to
+ * restrictions set forth in Contract No. GS-35F-05925.
+*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{text-align: center;}
+.hasDatepicker{
+	 width:180px;
+	 height:30px;
+	 border-radius:5px;
+	 border:1px solid #dddddd;
+	 padding-left:5px;
+}
+textarea{
+	width:285px;
+	height:50px;
+	border-radius:5px;
+	border:1px solid #dddddd;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+input[name="job_user"]{
+	 width:180px;
+	 height:30px;
+	 border-radius:5px;
+	 border:1px solid #dddddd;
+	 padding-left:5px;
+	 box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+input[name="node"]{
+	 width:180px;
+	 height:30px;
+	 border-radius:5px;
+	 border:1px solid #dddddd;
+	 padding-left:5px;
+	 box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+input[name="bill"]{
+	 width:180px;
+	 height:30px;
+	 border-radius:5px;
+	 border:1px solid #dddddd;
+	 padding-left:5px;
+	 box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.template_select{
+	 width:180px !important;
+	 height:30px !important;
+	 border-radius:5px;
+	 border:1px solid #dddddd;
+	 padding-left: 5px;
+	 box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.turnRound{
+background-image:url('/static/js/customUI/report/resource/toggle.png');
+/*border:1px solid red;*/
+}
+
+
+.list-group-item{
+	border-left:1px solid #ffffff;
+	border-right:1px solid #ffffff;
+}
+.panel-heading{
+	border-top:1px solid #e2e2e2 !important;
+}
+.panel-default_report{
+	border:1px solid #ffffff !important;
+}
+.jobs_select_templates{
+	width:20%;
+	float:left;
+	background-color:#ffffff;
+	height:620px;
+	border-right:1px solid #e2e2e2;
+/*	margin-top:5px;*/
+	}
+.jobs_select_templates_content{
+	padding-left:20px;
+    width:79%;
+	height:580px;
+	float:left;
+	background-color: #ffffff;
+	border:0px solid #e2e2e2;
+	/*margin-top:5px;*/
+
+}
+
+.reportResoult_style{
+	width:400px;
+	height:36px;
+	/*background-color:green;*/
+	line-height:36px;
+	float:left;
+}
+
+.the_icon_report_create_resoult{
+	float:left;
+	width:36px;
+	height:36px;
+	background-image:url('/static/js/customUI/report/resource/ic_clear_red_36x36.png');
+}
+.icon_of_open_log{
+	margin-top:4px;
+	width:16px;
+	height:8px;
+	background-image:url('/static/js/customUI/report/resource/select_part_close.png');
+	float:right;
+}
+.icon_of_open_job{
+	margin-top:4px;
+	width:16px;
+	height:8px;
+	background-image:url('/static/js/customUI/report/resource/select_part_close.png');
+	float:right;
+}
+.icon_of_open_alarm{
+	margin-top:4px;
+	width:16px;
+	height:8px;
+	background-image:url('/static/js/customUI/report/resource/select_part_close.png');
+	float:right;
+}
+.part_panel_icon{
+	width:10px;
+	height:10px;
+	float:left;
+	margin-right:15px;
+	margin-top:5px;
+	margin-left:5px;
+}
+.part_panel_icon_bg{
+	background-image:url('/static/js/customUI/report/resource/select_part_new.png');
+}
+
+.panel_icon_log{
+	background-image:url('/static/js/customUI/report/resource/log.png');
+	width:16px;
+	height:16px;
+	float:left;
+	margin-right:10px;
+	margin-left:5px;
+}
+.panel_icon_alarm{
+	background-image:url('/static/js/customUI/report/resource/alarm.png');
+	width:16px;
+	height:16px;
+	float:left;
+	margin-right:10px;
+	margin-left:5px;
+}
+.panel_icon_job{
+	background-image:url('/static/js/customUI/report/resource/job.png');
+	width:16px;
+	height:16px;
+	float:left;
+	margin-right:10px;
+	margin-left:5px;
+}
+.new_list_icon_down{
+	background-image:url('/static/js/customUI/report/resource/reportForm.png');
+}
+
+.heading_background{
+	
+FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#b8c4cb,endColorStr=red); /*IE 6 7 8*/ 
+
+background: -ms-linear-gradient(top, #b0d4f5,  #7ba8d1);        /* IE 10 */
+
+background:-moz-linear-gradient(top,#b0d4f5,#7ba8d1);/*火狐*/ 
+
+background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#b0d4f5), to(#7ba8d1));/*谷歌*/ 
+
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b0d4f5), to(#7ba8d1));      /* Safari 4-5, Chrome 1-9*/
+
+background: -webkit-linear-gradient(top, #b0d4f5, #7ba8d1);   /*Safari5.1 Chrome 10+*/
+
+background: -o-linear-gradient(top, #b0d4f5, #7ba8d1);  /*Opera 11.10+*/
+
+}
+.panel-body{
+	border:0px solid #ffffff !important;
+}
+.hostname_nodes_input_outter{
+	height:70px !important;
+}
+.hostname_nodes_input{
+	width:174px;
+	height:46px;
+}
+.template_select{
+	width:174px;
+	height:23px;
+}
+.list-group-item:first-child{
+	border-radius: 0px;
+} 
+.list-group-item:last-child{
+	border-radius: 0px;
+}
+.new_list_icon_outter{
+	width:100%;
+	height:100%;
+}
+#admin-users-title_one{
+	margin-bottom:0px !important;
+	padding-left:20px !important;
+	padding-right:20px !important;
+	background-color:#ffffff !important;
+	border-bottom:1px solid #e2e2e2 !important;
+}
+
+.triangle-down{
+	width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ffffff;
+    margin-top:3px;
+    float:right;
+}
+
+.triangle-up{
+	width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #666666;
+    margin-top:3px;
+    float:right;
+}
+.panel-group .panel{
+	border-radius:0px !important ;
+}
+/*.panel-heading{
+	border-radius:0px !important ;
+	background-color: #ffffff !important;
+}
+.panel-heading:hover{
+	background:#cfe5f9 !important ;
+	color:#ffffff !important;
+}*/
+.panel-group .panel+.panel{
+	margin-top:0px !important ;
+	border-radius:0px !important ;
+}
+.the_name_of_template{
+	width:100%;
+	height:100px;
+/*	border:2px solid #0000FF;*/
+/*	background-color: #f2f2f2;*/
+	font-size:16px;
+	line-height:100px;
+	padding-left:60px;
+	font-weight: 900;
+}
+.part_panel_icon_outter_click{
+	background-color: #006699;
+	color:#ffffff;
+}
+.part_panel_icon_outter{
+	width:100%;
+	height:37px;
+/*	padding-left:45px;*/
+	padding-top:9px;
+}
+.part_panel_icon_outter:hover{
+	cursor: pointer;
+	/*background-color: #006699;
+	color:#ffffff;*/
+	-moz-box-shadow:0px 0px 10px #d9d9d9 inset;               /* For Firefox3.6+ */
+	-webkit-box-shadow:0px 0px 10px #d9d9d9 inset;            /* For Chrome5+, Safari5+ */
+	box-shadow:0px 0px 10px #d9d9d9 inset;                    /* For Latest Opera */
+}
+
+hr{
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+}
+.panel-body{
+	padding:0px !important;
+
+}
+.part_panel_divider{
+	/*width:100%;
+	height:1px;
+	border*/
+}
+
+.panel_icon{
+	width:16px;
+	height:16px;
+    background-color:#89b6de;
+	float:left;
+	margin-right:10px;
+}
+.jobs_select_templates_choice{
+	font-family: "微软雅黑";
+	text-align:left;
+	width:100%;
+	height:38px;
+	font-size:16px;
+	line-height:38px;
+	padding-left:20px;
+	background-color: #f5f5f5;
+}
+.jobs_select_templates_choice_part:hover{
+	-moz-box-shadow:5px 5px 5px #999 inset;               /* For Firefox3.6+ */
+	-webkit-box-shadow:5px 5px 5px #999 inset;            /* For Chrome5+, Safari5+ */
+	box-shadow:5px 5px 5px #999 inset;                    /* For Latest Opera */
+	cursor: pointer;
+}
+.jobs_select_templates_choice_part{
+	width:100%;
+	height:40px;
+	font-family: "微软雅黑";
+	font-size:14px;
+	border-top: 1px solid #eeeeee;
+	line-height:40px;
+	text-align: left;
+	padding-left:20px;
+}
+
+.jobs_select_templates_part_tip{
+	width:30%;
+	height:26px;
+/*	background-color:#0000FF;*/
+	float:right;
+	margin-right: 40%;
+	line-height: 26px;
+}
+.jobs_select_templates_submint_buttom{
+   
+    position:absolute !important;
+    bottom:10px;	
+    right:40.5%;
+    width:140px;
+    height:34px;
+}
+/*.jobs_select_templates_submint_buttom:hover{
+	background-color:#ffffff;
+	color:#006699;
+	cursor:pointer;
+}*/
+.jobs_select_templates_buttom{
+	width:70px;
+	height:25px;
+	border:2px solid #006699;
+	border-radius: 7px;
+	float:left;
+	margin-right:40px;
+	color:#006699;
+	text-align: center;
+	line-height: 20px;
+}
+.jobs_select_templates_buttom:hover{
+	background-color:#006699 ;
+	color:#ffffff;
+	cursor:pointer;
+}
+.jobs_select_templates_part{
+	width:100%;
+	height:50px;
+	border:0px solid #333333;
+	/*margin-bottom:20px;*/
+}
+.jobs_select_templates_part_left{
+	width:45%;
+	height:100%;
+/*	background-color:#f2f2f2;*/
+	float:left;
+	text-align: right;
+	line-height: 50px;
+	
+}
+.jobs_select_templates_part_right{
+	width:45%;
+	height:100%;
+/*	border:1px solid #333333;*/
+	float:left;
+	padding-top:13px;
+	padding-left:20px;
+}
+.jobs_select_templates_report_format{
+	width:90%;
+	/*height:150px;*/
+/*	border:2px solid #00ff00;*/
+    padding-left:60px;
+	margin-bottom:10px;
+}
+.jobs_select_templates_condition_filter{
+	/*width:95%;*/
+/*	height:150px;*/
+/*	border:2px solid #00ff00;*/
+    padding-left:60px;
+	margin-bottom:10px;
+}
+.jobs_select_templates_period{
+	width:90%;
+/*	height:150px;*/
+/*	border:2px solid #00ff00;*/
+    padding-left:60px;
+	margin-bottom:10px;
+}
+.jobs_select_templates_period_inner_title{
+	width:100%;
+	height:30px;
+	font-size:16px;
+	font-family: "微软雅黑" !important;
+	line-height: 30px;
+	margin-bottom: 10px;
+	border:1px solid #d9d9d9;
+	font-weight:400;
+	padding-left:20px;
+	
+FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#b8c4cb,endColorStr=red); /*IE 6 7 8*/ 
+
+background: -ms-linear-gradient(top, #ffffff,  #EEEEEE);        /* IE 10 */
+
+background:-moz-linear-gradient(top,#ffffff,#EEEEEE);/*火狐*/ 
+
+background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#ffffff), to(#EEEEEE));/*谷歌*/ 
+
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#EEEEEE));      /* Safari 4-5, Chrome 1-9*/
+
+background: -webkit-linear-gradient(top, #ffffff, #EEEEEE);   /*Safari5.1 Chrome 10+*/
+
+background: -o-linear-gradient(top, #ffffff, #EEEEEE);  /*Opera 11.10+*/
+
+	}
+
+.table.dataTable thead .sorting_asc{
+	background-image:none ;
+}
+
+.btn-toolbar{
+	margin-bottom: 20px !important;
+}
+
+h3{font-size:20px !important;font-family: "微软雅黑" !important;font-weight: 500;}
+
+.dt-center {
+  text-align: center;
+}
+
+.modal-footer-overall {
+  margin-bottom: 15px;
+  border-top: none;
+}
+
+.overall-heading {
+  line-height: 60px;
+  vertical-align: middle;
+  height: 60px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/*.userViewArea {
+  padding-left: 0px;
+}*/
+
+.multiselect-container.dropdown-menu>.active>a {
+  background-color: white;
+  color: #333;
+}
+#listNodesTable_length{
+  width:30%;
+  
+  float:left;
+}
+#listNodesTable_filter{
+  width:30%;
+  
+  float:right;
+}
+#listNodesTable_info{
+  width:30%;
+  
+  float:left;
+}
+#listNodesTable_paginate{
+  width:30%;
+  
+  float:right;
+}
+
+.btn-toolbar{
+    height:30px !important;
+  }
+
+a:link,a:hover,a:visited {
+  text-decoration: none;
+}
+.block-header {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.block-content {
+  margin-left: 10px;
+}
+
+.overall-padding {
+  padding-top: 20px;
+}
+
+.groupInput {
+  width: 300px;
+  margin-left: 7px;
+  display: inline-block;
+}
+.list-group-item part_panel_icon_outter{
+	width:317px;
+	height:37px;
+}

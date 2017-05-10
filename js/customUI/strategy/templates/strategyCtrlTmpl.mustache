@@ -1,0 +1,166 @@
+<div class="s-ctrl-content">
+	<div class="strategy-button-box clearfix">
+		<div class="btn-group mb18">
+			<button class="btn btn-primary" id="strategy_add">
+				<span class="strategy_icon strategy_add"></span> {{nls.add}}</button>
+		</div>
+	</div>
+	<div class="dataTable_wrapper">
+		<table class="table table-striped table-hover" style="width:100%;" id="strategyTable"></table>
+	</div>
+</div>
+<!--策略模态框-->
+<div class="modal fade" id="strategy_modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-content-overall">
+            <div class="modal-header modal-header-overall">
+                <h4 class="strategy-modal-title">{{nls.title}}</h4>
+            </div>
+            <div class="modal-body">
+	            <form id="strategy_modal_form">
+	                <div class="col-sm-12 strategy_modal_body">
+						<div class="form-group clearfix">
+							<div class="col-sm-4 line30 text-right">{{nls.policy_name}}</div>
+							<div class="col-sm-6">
+							  <input type="text" id="alarm_policy_name" class="form-control" name="policy_name" placeholder="{{nls.placeholder_name}}">
+							</div>
+						</div>
+						<div class="form-group clearfix">
+							<div class="col-sm-4 line30 text-right">{{nls.alarmMonitor}}</div>
+							<div class="col-sm-6">
+                                <select id="alarm_policy_metric" class="form-control" name="policy_metric">
+                                <option value="CPUSAGE" selected>{{nls.alarmCPU}}</option>
+								  <option value="TEMP">{{nls.alarmTemp}}</option>
+								  <option value="NODE_ACTIVE">{{nls.alarmNerwork}}</option>
+								  <option value="DISK">{{nls.alarmDisk}}</option>
+								  <option value="ELECTRIC">{{nls.alarmElectric}}</option>
+                                    <option value="HARDWARE">{{nls.alarmHardware}}</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group clearfix">
+							<div class="col-sm-4 line30 text-right">{{nls.alarmCondition}}</div>
+							<div class="col-sm-3">
+								<select id="alarm_policy_condition" class="form-control" name="portal">
+								  <option value="$gt">{{nls.alarm_gt}}</option>
+								  <option value="$lt">{{nls.alarm_lt}}</option>
+								  <option value="$eq">{{nls.alarm_eq}}</option>
+								</select>
+							</div>
+							<div class="col-sm-3">
+							  <input type="text" placeholder="{{nls.empty}}" id="alarm_threshold" class="form-control">
+							</div>
+						</div>
+						<div class="form-group clearfix">
+							<div class="col-sm-4 line30 text-right">{{nls.alarm_duration_time}}</div>
+							<div class="col-sm-5">
+							  <input type="text" id="alarm_continued_time" placeholder="{{nls.empty}}" class="form-control" name="duration">
+							</div>
+							<div class="col-sm-1 line30">{{nls.alarm_second}}</div>
+						</div>
+						<div class="form-group clearfix">
+							<div class="col-sm-4 line30 text-right">{{nls.alarm_monitornodes}}</div>
+							<div class="col-sm-6">
+							  <textarea id="alarm_policy_nodes" class="form-control" placeholder="{{nls.alarm_placeholdernodes}}" name="nodes"></textarea>
+							</div>
+						</div>
+						<div class="form-group clearfix">
+							<div class="col-sm-4 line30 text-right">{{nls.policy_level}}</div>
+							<div class="col-sm-6">
+								<select id="alarm_policy_level" class="form-control" name="policy_level">
+								  <option value="50" selected>{{nls.alarm_fatal}}</option>
+								  <option value="40">{{nls.alarm_error}}</option>
+								  <option value="30">{{nls.alarm_warn}}</option>
+                                  <option value="20">{{nls.alarm_info}}</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group clearfix">
+							<div class="col-sm-4 line30 text-right">{{nls.alarm_policymail}}</div>
+							<div class="col-sm-6 line30">
+						      <textarea id="alarm_policy_email" class="form-control" placeholder="{{nls.alarm_placeholdermail}}" name="policy_email"></textarea>
+							</div>
+						</div>
+						<div class="form-group clearfix">
+							<div class="col-sm-4 line30 text-right">{{nls.alarm_policyphone}}</div>
+							<div class="col-sm-6 line30">
+						      <textarea id="alarm_policy_phone" class="form-control" placeholder="{{nls.alarm_placeholderphone}}" name="policy_sms"></textarea>
+							</div>
+						</div>
+                        <div class="form-group clearfix">
+                            <div class="col-sm-4 line30 text-right">{{nls.alarm_policyscript}}</div>
+                            <div class="col-sm-6">
+                                <select id="alarm_policy_script" class="form-control" name="policy_script">
+                                    <option value="" selected>{{nls.alarm_policy_please}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <div class="col-sm-4 line30 text-right">{{nls.alarm_noticetype}}</div>
+                            <div class="col-sm-3 line30">
+                                <input type="checkbox" name="policy_wechat"class="inputStyle" id="input_chat"> {{nls.chat}}
+                            </div>
+                            <div class="col-sm-3 line30">
+                                <input type="checkbox" name="policy_sound"class="inputStyle" id="input_voice"> {{nls.alarm_policyvoice}}
+                            </div>
+                        </div>
+						<div class="form-group clearfix">
+							<div class="col-sm-4 line30 text-right">{{nls.status}}</div>
+							<div class="col-sm-3 line30">
+						        <input type="radio" checked name="status" class="inputStyle" value="ON" id="input_on"> {{nls.alarm_on}}
+							</div>
+							<div class="col-sm-3 line30">
+						        <input type="radio" name="status" class="inputStyle" value="OFF" id="input_off"> {{nls.alarm_off}}
+							</div>
+						</div>
+	                </div>
+	            </form>
+            </div>
+            <div class="modal-footer modal-footer-overall">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="btn btn-primary btn-narrowModal" id="add_edit_confirm">
+                        {{nls.confirm}}</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn btn-default btn-narrowModal" data-dismiss="modal">{{nls.cancel}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="layui-layer-move">
+		<div class="layui-layer-content">{{nls.save_error}}</div>
+	</div>
+</div>
+
+<div class="modal fade" id="delete_alarmpolicy_modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="true">
+    <div class="modal-dialog modal-overall">
+        <div class="modal-content modal-content-overall">
+            <div class="modal-header modal-header-overall">
+                <h4 class="modal-title">{{nls.alarmwarn}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row pl30">
+                    <div class="col-sm-12">
+                        <div class="tips-content">
+                            <div id="delete_alarm_text">{{nls.alarmText}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer modal-footer-overall">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="btn btn-primary btn-narrowModal" id="delete_alarm_policy">
+                            {{nls.alarmdelete}}</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn btn-default btn-narrowModal" data-dismiss="modal">{{nls.cancel}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

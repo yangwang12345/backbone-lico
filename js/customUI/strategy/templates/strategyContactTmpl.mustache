@@ -1,0 +1,214 @@
+<div class="s-contact-content clearfix">
+	<div class="s-contact-left">
+		<h3 class="text-center">
+        	<img src="/static/js/customUI/strategy/img/email23x19.png"/> {{nls.email}}
+    	</h3>
+    	<div class="s-contact-left-box">
+			<div class="form-group clearfix">
+				<div class="col-sm-offset-1 col-sm-4 line30">{{nls.status}}</div>
+				<div class="col-sm-3 line30">
+			        <input type="radio" name="e_status" class="inputStyle"> {{nls.on}}
+				</div>
+				<div class="col-sm-3 line30">
+			        <input type="radio" checked name="e_status" class="inputStyle"> {{nls.off}}
+				</div>
+			</div>
+			<div class="form-group clearfix">
+				<div class="col-sm-offset-1 col-sm-4 line30">SSL</div>
+	            <div class="col-sm-7 line30">
+	                <input type="radio" checked name="ssl" class="inputStyle" value=null> {{nls.alarm_null}}&nbsp&nbsp
+	            <!-- </div> -->
+				<!-- <div class="col-sm-2 line30"> -->
+			        <input type="radio" name="ssl" class="inputStyle" value="{{nls.alarm_ssl}}"> {{nls.alarm_ssl}}&nbsp&nbsp
+<!-- 				</div>
+				<div class="col-sm-2 line30"> -->
+			        <input type="radio"name="ssl" class="inputStyle" value="{{nls.alarm_tls}}"> {{nls.alarm_tls}}
+				</div>
+			</div>
+			<div class="form-group clearfix">
+				<div class="col-sm-offset-1 col-sm-4 line30">{{nls.username}}</div>
+				<div class="col-sm-6">
+				  <input type="text" class="form-control" name="username"  id="user" placeholder="{{nls.nameDefaultValue}}">
+				</div>
+			</div>
+			<div class="form-group clearfix">
+				<div class="col-sm-offset-1 col-sm-4 line30">{{nls.psw}}</div>
+				<div class="col-sm-6">
+					<input type="password" class="form-control" name="password" placeholder="{{nls.pwdDefaultValue}}" id="password">
+				</div>
+			</div>
+			<div class="form-group clearfix">
+				<div class="col-sm-offset-1 col-sm-4 line30">{{nls.smtp}}</div>
+				<div class="col-sm-6">
+				  <input type="text" placeholder={{nls.warn_smtp}} name="server_address" class="form-control" id="require_smtp">
+				</div>
+			</div>
+			<div class="form-group clearfix">
+				<div class="col-sm-offset-1 col-sm-4 line30">{{nls.smtp_port}}</div>
+				<div class="col-sm-6">
+				  <input type="text" placeholder={{nls.warn_port}} name="server_port" class="form-control" id="send_port">
+				</div>
+			</div>
+			<div class="form-group clearfix">
+				<div class="col-sm-offset-1 col-sm-4 line30">{{nls.send_email}}</div>
+				<div class="col-sm-6">
+				  <input type="text" placeholder={{nls.warn_email}} name="sender_address" class="form-control" id="send_email">
+				</div>
+			</div>
+			<div class="form-group clearfix">			
+				<div class="col-sm-offset-1 col-sm-5">
+	            	<button class="btn btn-primary" id="email_test">{{nls.test_email}}</button>
+	        	</div>
+				<div class="col-sm-5">
+	           	 	<button class="btn btn-primary" id="email_confirm">{{nls.confirm}}</button>
+	            </div>
+			</div>	
+			<div class="layui-layer-move">
+				<div class="layui-layer-content">{{nls.send_success}}</div>
+			</div>
+		</div>
+	</div>
+	<div class="s-contact-center">
+		<h3 class="text-center">
+			<img src="/static/js/customUI/strategy/img/num23x19.png"/> {{nls.phone}}
+		</h3>
+    	<div class="s-contact-center-box">
+			<div class="form-group clearfix">
+				<div class="col-sm-offset-1 col-sm-4 line30">{{nls.status}}</div>
+				<div class="col-sm-3 line30">
+			        <input type="radio" name="p_status" class="inputStyle"> {{nls.on}}
+				</div>
+				<div class="col-sm-3 line30">
+			        <input type="radio" checked name="p_status" class="inputStyle"> {{nls.off}}
+				</div>
+			</div>
+			<div class="form-group clearfix">
+				<div class="col-sm-offset-1 col-sm-4 line30">{{nls.port}}</div>
+				<div class="col-sm-6">
+					<select class="form-control" id="port" name="serial_port">
+					</select>
+				</div>
+			</div>
+			<div class="form-group clearfix">
+				<div class="col-sm-offset-1 col-sm-4 line30">{{nls.modem}}</div>
+				<div class="col-sm-6">
+					<select class="form-control" id="modem" name="modem">
+					  <option value="GPRS">GPRS</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group clearfix">
+				<div class="col-sm-offset-1 col-sm-4 line30">{{nls.num_max}}</div>
+				<div class="col-sm-6">
+					<select class="form-control" id="num_max" name="daily_limit">
+					  <option value="1000">1000</option>
+					  <option value="300">300</option>
+					  <option value="500">500</option>
+					  <option value="800">800</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group clearfix">
+				<div class="col-sm-offset-1 col-sm-4 line30">{{nls.sended}}</div>
+				<div class="col-sm-6">
+					<div class="sended" id="sended"></div>
+				</div>
+			</div>
+			<div class="form-group clearfix">			
+				<div class="col-sm-offset-1 col-sm-5">
+	            	<button class="btn btn-primary" id="phone_test">{{nls.test_phone}}</button>
+	            </div>
+				<div class="col-sm-5">
+	           	 	<button class="btn btn-primary" id="phone_confirm">{{nls.confirm}}</button>
+	            </div>
+			</div>	
+		</div>
+		<div class="layui-layer-move">
+			<div class="layui-layer-content">{{nls.send_success}}</div>
+		</div>
+	</div>
+	<div class="s-contact-right">
+		<h3 class="text-center">
+			<img src="/static/js/customUI/strategy/img/wechat_23x19.png"/> {{nls.chat}}
+		</h3>
+    	<div class="s-contact-right-box">
+			<div class="form-group clearfix">
+				<div class="col-sm-offset-1 col-sm-4 line30">{{nls.status}}</div>
+				<div class="col-sm-3 line30">
+			        <input type="radio" name="c_status" class="inputStyle"> {{nls.on}}
+				</div>
+				<div class="col-sm-3 line30">
+			        <input type="radio" checked name="c_status" class="inputStyle"> {{nls.off}}
+				</div>
+			</div>
+			<div id="qr-box">
+				<div class="qr-success-box"></div>
+				<div class="qr-loading-box">
+					<img class="qr-img qr-loading-img" src="/static/js/customUI/strategy/img/loading94x95.gif"/>
+					<div class="qr-loading-text">{{nls.loading}}</div>
+				</div>
+				<div class="qr-error-box">
+					<img class="qr-img qr-error-img" src="/static/js/customUI/strategy/img/qr-error120x120.png"/>
+					<div class="qr-error qr-error-t">{{nls.qr_error}}</div>
+					<div class="qr-error qr-error-b">{{nls.click_qr}}</div>
+				</div>
+			</div>
+			<div class="form-group clearfix mt42">			
+				<div class="col-sm-offset-1 col-sm-5">
+	            	<button class="btn btn-primary" id="chat_test">{{nls.test_chat}}</button>
+	            </div>
+				<div class="col-sm-5">
+	           	 	<button class="btn btn-primary" id="chat_confirm">{{nls.confirm}}</button>
+	            </div>
+			</div>	
+		</div>
+		<div class="layui-layer-move">
+			<div class="layui-layer-content">{{nls.send_success}}</div>
+		</div>
+	</div>
+</div>
+<!-- 测试弹出摸态框 -->
+<div class="modal fade" id="test_modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="true">
+    <div class="modal-dialog  modal-overall">
+        <div class="modal-content modal-content-overall">
+            <div class="modal-header modal-header-overall">
+                <h4 class="contact-modal-title"></h4>
+            </div>
+            <div class="modal-body">
+	                <div class="col-sm-12 strategy_modal_body" id="strategy_modal_body"></div>
+					<script type="text/template" id="test_modal_body">
+						<% if( datas.type == 'email' ){%>
+							<div class="form-group clearfix">
+								<div class="col-sm-4 line30 text-right"><%= datas.receive_email %></div>
+								<div class="col-sm-6">
+								  <input type="text" class="form-control" id="receive_email" placeholder="<%= datas.warn_email %>">
+								</div>
+							</div>
+							<% } else if( datas.type == 'phone' ) { %>
+							<div class="form-group clearfix">
+								<div class="col-sm-4 line30 text-right"><%= datas.phone_num %></div>
+								<div class="col-sm-6">
+								  <input type="text" class="form-control" id="receive_phone" placeholder="<%= datas.warn_phone %>">
+								</div>
+							</div>
+						<%} %>
+					</script>
+            </div>
+            <div class="modal-footer modal-footer-overall">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="btn btn-primary btn-narrowModal btn-narrowModalLeft" id="e_test_confirm">
+                        {{nls.confirm}} <span id="setinterval"></span></button>
+                        <button class="btn btn-primary btn-narrowModal btn-narrowModalLeft" id="p_test_confirm">
+                        {{nls.confirm}} <span id="setinterval"></span></button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn btn-default btn-narrowModal" data-dismiss="modal" id="contact_miss">{{nls.cancel}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,76 @@
+<!--
+/*
+ * © Copyright Lenovo 2015.
+ *
+ * LIMITED AND RESTRICTED RIGHTS NOTICE:
+ *
+ * If data or software is delivered pursuant a General Services Administration
+ * "GSA" contract, use, reproduction, or disclosure is subject to
+ * restrictions set forth in Contract No. GS-35F-05925.
+*/
+-->
+<div class="admin-users-title" style="margin-bottom:0px;padding-left:20px;padding-right:20px;border:0px solid #eeeeee;">
+    <div style="width:100%;height:100%;border-bottom:1px solid #eeeeee;">
+        <div class="new_monitor_icon new_list_icon"></div>
+        <h3 class="overall-heading">{{nls.listview}}</h3>
+    </div>
+
+</div>
+{{!节点列表开始}}
+<div class="group-glist">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="mb16">
+                <div class="btn-group">
+                    <button class="btn btn-primary" id="g_shutup" disabled>
+                        <span class="g_icon g_row_power_on"></span> {{nls.monitor_turn_on}}</button>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-primary" id="g_shutdown" disabled>
+                        <span class="g_icon g_row_power_off"></span> {{nls.monitor_turn_off}}</button>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-primary" id="g_kvm" disabled>
+                        <span class="g_icon g_row_kvm"></span> {{nls.monitor_WebKVM}}</button>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-primary" id="g_ssh" disabled>
+                        <span class="g_icon g_row_ssh"></span> {{nls.monitor_WebSSH}}</button>
+                </div>
+            </div>
+            <div class="dataTable_wrapper" id="listNodesTable_wrapper_only" style="margin-top:10px;width:100%;">
+                <table class="table table-striped table-hover" style="width:100%;" id="gListTable"></table>
+            </div>
+            <div class="g_select_all" id="g_select_all"></div>
+        </div>
+    </div>
+</div>
+{{!节点列表结束}}
+
+<div id="g_mymodal"></div>
+
+
+<div id="modalShow"></div>
+
+
+
+
+{{!不同时间段的数据刷新的开关}}
+<div id="different_time_period">
+
+</div>
+{{!不同时间段的数据刷新的开关}}
+
+{{!不同task数据刷新的开关}}
+<div id="different_part_task">
+
+</div>
+{{!不同task数据刷新的开关}}
+
+{{!单节点硬件信息刷新开关}}
+<div id="monitor_body_up_outter"></div>
+{{!单节点硬件信息刷新开关}}
+
+{{!全量获取失败开关}}
+<div id="history-tab-panel_down_outter"></div>
+{{!全量获取失败开关}}

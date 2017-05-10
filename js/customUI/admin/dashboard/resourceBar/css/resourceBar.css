@@ -1,0 +1,28 @@
+/*
+ * © Copyright Lenovo 2015.
+ *
+ * LIMITED AND RESTRICTED RIGHTS NOTICE:
+ *
+ * If data or software is delivered pursuant a General Services Administration
+ * "GSA" contract, use, reproduction, or disclosure is subject to
+ * restrictions set forth in Contract No. GS-35F-05925.
+*/
+.admin-resourcebar {
+	background-color: #ffffff;
+}
+
+.admin-resource-cell {
+	border: 1px solid #E1DFDA;
+	height: 220px;
+	
+}
+.admin-dashboard {
+	margin-top: 20px;
+	margin-left: 35px;
+	margin-right: 35px;
+}
+
+/*用户提交作业界面 #footer-wrapper DIV 去处100px高度*/
+#footer-wrapper{height:20px !important;}
+#io-window-container3{width:100%;}
+

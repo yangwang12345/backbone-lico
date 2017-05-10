@@ -1,0 +1,48 @@
+<!--
+/*
+ * © Copyright Lenovo 2015.
+ *
+ * LIMITED AND RESTRICTED RIGHTS NOTICE:
+ *
+ * If data or software is delivered pursuant a General Services Administration
+ * "GSA" contract, use, reproduction, or disclosure is subject to
+ * restrictions set forth in Contract No. GS-35F-05925.
+*/
+-->
+<div class="col-lg-7 col-md-12 admin-jobCell" >
+	<div id="job_chart_admin"></div>
+</div>
+
+<div class="col-lg-5 col-md-12 admin-nodeCell">
+	<div id="node_chart_admin" >
+		<div  id="node_chart_admin_up_title">{{nls.nodeSituation}} 
+		    
+		    <div  class="node_chart_admin_up_title_categray" id="io_node" >I/O<span id="node_chart_admin_up_title_io">(100)</span></div>
+		    <div  class="node_chart_admin_up_title_categray" id="manage_node" >管理<span id="node_chart_admin_up_title_manage">(100)</span></div>
+		    <div  class="node_chart_admin_up_title_categray" id="login_node" >登录<span id="node_chart_admin_up_title_login">(100)</span></div>
+		    <div  class="node_chart_admin_up_title_categray" id="compute_node" >计算<span id="node_chart_admin_up_title_compute">(100)</span></div>
+		</div>
+		<hr/>
+		<div id="select_nodesOverview" >
+			<div class="top-label">
+				<div  id="top-label_off" ></div>{{nls.offStatus}}
+			</div>
+			<div class="top-label">
+				<div id="top-label_idle"></div>{{nls.idleStatus}}
+			</div>
+			<div class="top-label">
+				<div id="top-label_working" ></div>{{nls.workingStatus}}
+			</div>
+			<div class="top-label">
+				<div id="top-label_busy"></div>{{nls.busyStatus}}
+			</div>
+		</div>
+		<div id="nodesOverview" ></div>
+	</div>
+	<!--不同的视图的刷新开关-->
+	    <div id="compute_node_flag"><div id="compute_node_flag_inner" ></div></div>
+        <div id="manage_node_flag"></div>
+        <div id="login_node_flag"></div>
+        <div id="IO_node_flag"></div>
+    <!--不同的视图的刷新开关-->
+</div>

@@ -1,0 +1,245 @@
+<div class="admin-users-title " id="admin-users-title_one">
+    <div  class="new_list_icon_outter">
+		 <div class="new_monitor_icon new_list_icon_down"></div><h3 class="overall-heading">{{nls.reporForm}}</h3>
+	</div>	 
+</div>
+
+<div id="reportView">
+	<div class="jobs_select_templates">
+	<header class="jobs_select_templates_choice" style="font-family: '微软雅黑' !important;">{{nls.listHeader}}</header>
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	  <div class="panel panel-default panel-default_report">
+	  	
+	  	<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	    <div class="panel-heading" role="tab" id="headingOne">
+	      <h4 class="panel-title">
+	          <div class="panel_icon_job"></div>{{nls.jobReport}}<div class="icon_of_open_job" id="icon_of_open_job_1"></div>
+	      </h4>
+	    </div>
+	     </a>
+	     
+	    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+	      <div class="panel-body">
+	    <!--    <ul class="list-group">-->
+			  <li class="list-group-item part_panel_icon_outter" name="jobReportStat"><div class="part_panel_icon"></div>{{nls.jobReportStat}}</li>
+			  <li class="list-group-item part_panel_icon_outter" name="jobReportDetail" style="border-bottom:1px solid #ffffff"><div class="part_panel_icon"></div>{{nls.jobReportDetail}}</li>
+			  <li class="list-group-item part_panel_icon_outter" name="userReportStat"><div class="part_panel_icon"></div>{{nls.userReportStat}}</li>
+			  <li class="list-group-item part_panel_icon_outter" name="userReportDetail" style="border-bottom:1px solid #ffffff"><div class="part_panel_icon"></div>{{nls.userReportDetail}}</li>
+			  <li class="list-group-item part_panel_icon_outter" name="billReportStat"><div class="part_panel_icon"></div>{{nls.billReportStat}}</li>
+			  <li class="list-group-item part_panel_icon_outter" name="billReportDetail" style="border-bottom:1px solid #ffffff"><div class="part_panel_icon"></div>{{nls.billReportDetail}}</li>
+	<!--		</ul>-->
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default panel-default_report">
+	  	
+	  	<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+	    <div class="panel-heading" role="tab" id="headingTwo">
+	      <h4 class="panel-title">
+	          <div class="panel_icon_alarm"></div>{{nls.alarmReport}}<div class="icon_of_open_alarm"></div>
+	      </h4>
+	    </div>
+	     </a>
+	     
+	    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+	      <div class="panel-body">
+	   <!--    	<ul class="list-group">-->
+			  <li class="list-group-item part_panel_icon_outter" name="alarmReportStat"><div class="part_panel_icon"></div>{{nls.alarmReportStat}}</li>
+			  <li class="list-group-item part_panel_icon_outter" name="alarmReportDetail" style="border-bottom:1px solid #ffffff"><div class="part_panel_icon"></div>{{nls.alarmReportDetail}}</li>
+		<!--	</ul>-->
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default panel-default_report">
+	  	
+	  	<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+	    <div class="panel-heading" role="tab" id="headingThree">
+	      <h4 class="panel-title">
+	          <div class="panel_icon_log"></div>{{nls.logReport}}<div class="icon_of_open_log"></div>
+	      </h4>
+	    </div>
+	    </a>
+	    
+	    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+	      <div class="panel-body">
+	        <!--<ul class="list-group">-->
+			  <li class="list-group-item part_panel_icon_outter" name="logReportDetail" style="border-bottom:1px solid #ffffff"><div class="part_panel_icon"></div>{{nls.logReportDetail}}</li>
+			  <li class="list-group-item part_panel_icon_outter" name="node_runningReportStat" style="border-bottom:1px solid #ffffff"><div class="part_panel_icon"></div>{{nls.node_runningReportStat}}</li>
+			  <li class="list-group-item part_panel_icon_outter" name="node_userReportStat" style="border-bottom:1px solid #ffffff"><div class="part_panel_icon"></div>{{nls.node_userReportStat}}</li>
+			  <li class="list-group-item part_panel_icon_outter" name="user_loginReportStat" style="border-bottom:1px solid #ffffff"><div class="part_panel_icon"></div>{{nls.user_loginReportStat}}</li>
+			  <li class="list-group-item part_panel_icon_outter" name="user_storageReportStat" style="border-bottom:1px solid #ffffff"><div class="part_panel_icon"></div>{{nls.user_storageReportStat}}</li>
+		<!--	</ul>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+<div class="col-md-10  jobs_select_templates_content">
+	<div id="reportViewInput"></div>
+	<script type="text/template" id="reportViewTpl">
+		<header class="the_name_of_template"><%= datas.header %></header>
+		<form action="" id="reportViewData">
+			<% if(datas.type.indexOf('_')<0){ %>
+			<div class="jobs_select_templates_condition_filter">
+				<div class="reportViewTplHead  jobs_select_templates_period_inner_title"><%= datas.time_title %></div>
+				<div class="reportViewTplRow">
+					<div class="jobs_select_templates_part">
+						<div class="jobs_select_templates_part_left"><%= datas.function %></div>
+						<div class="jobs_select_templates_part_right" id="reportViewTimeFunc">
+							<input type="radio" name="function" value="init" checked>&nbsp;&nbsp;<%= datas.init %>&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="function" value="custom">&nbsp;&nbsp;<%= datas.custom %>	
+						</div>
+					</div>
+					<div class="jobs_select_templates_part">
+						<div class="jobs_select_templates_part_left"><%= datas.time %></div>
+						<div class="jobs_select_templates_part_right" id="reportViewTime">   
+							<select  class="template_select">
+							<% if( datas.infos == 'Detail' ){%>	
+							  <option value ="hour" selected="selected"><%= datas.timeHour %></option>
+							  <option value ="day"><%= datas.timeDay %></option>
+							<% } else { %>  
+							  <option value ="day" selected="selected"><%= datas.timeDay %></option>	
+							<% } %>
+							  <option value="week"><%= datas.timeWeek %></option>
+							  <option value="month"><%= datas.timeMonth %></option>
+							</select>
+						</div>	
+					</div>	
+				</div>
+			</div>
+			<% } %>
+			<% if( datas.type != 'log' ){%>
+				<div class="jobs_select_templates_condition_filter">
+					<div class="reportViewTplHead jobs_select_templates_period_inner_title"><%= datas.filter %></div>
+					<div class="reportViewTplRow">
+					<% if( datas.type == 'job' || datas.type == 'user' || datas.type == 'user_login' || datas.type == 'user_storage'){%>  
+							       <div class="jobs_select_templates_part">
+							       	<div class="jobs_select_templates_part_left"><%= datas.userName %></div>
+								       	<div class="jobs_select_templates_part_right">
+								       		<input type="text" name="job_user" placeholder="<%= datas.userNameInfo %>">&nbsp;&nbsp;&nbsp;&nbsp;(&nbsp;&nbsp;<%= datas.choosable %>&nbsp;&nbsp;)
+								       	</div>	
+							       </div>
+							       <div class="jobs_select_templates_part"></div> 
+							<% } else if(datas.type == 'node' || datas.type == 'node_user'){ %> 
+									<div class="jobs_select_templates_part">
+							       	<div class="jobs_select_templates_part_left"><%= datas.nodeName %></div>
+								       	<div class="jobs_select_templates_part_right">
+								       		<input type="text" name="node" placeholder="<%= datas.nodeNameInfo %>">&nbsp;&nbsp;&nbsp;&nbsp;(&nbsp;&nbsp;<%= datas.choosable %>&nbsp;&nbsp;)
+								       	</div>	
+							       </div>
+							       <div class="jobs_select_templates_part"></div>  
+							<% } else if(datas.type == 'node_running'){ %> 
+									<div class="jobs_select_templates_part">
+							       	<div class="jobs_select_templates_part_left"><%= datas.nodeName %></div>
+								       	<div class="jobs_select_templates_part_right">
+								       		<input type="text" name="node" placeholder="<%= datas.nodeNameInfo %>">&nbsp;&nbsp;&nbsp;&nbsp;(&nbsp;&nbsp;<%= datas.choosable %>&nbsp;&nbsp;)
+								       	</div>	
+							       </div>
+							       <div class="jobs_select_templates_part">
+							       	<div class="jobs_select_templates_part_left"><%= datas.index %>：</div>
+								       	<div class="jobs_select_templates_part_right" id="reportViewIndex">
+								       		<select class="template_select">
+										        <option value ="cpu" selected="selected"><%= datas.cpu %></option>	
+												<option value ="mem"><%= datas.mem %></option>
+												<option value ="net"><%= datas.net %></option>
+										    </select>
+								       	</div>	
+							       </div>
+							       <div class="jobs_select_templates_part"></div>       
+							<% } else if(datas.type == 'bill'){ %>   
+							<div class="jobs_select_templates_part">
+							       	<div class="jobs_select_templates_part_left"><%= datas.billName %></div>
+								       	<div class="jobs_select_templates_part_right">
+								       		<input type="text" name="bill" placeholder="<%= datas.billNameInfo %>">&nbsp;&nbsp;&nbsp;&nbsp;(&nbsp;&nbsp;<%= datas.choosable %>&nbsp;&nbsp;)
+								       	</div>	
+							       </div>
+							       <div class="jobs_select_templates_part"></div>     
+							<% } else { %>       
+								<div>
+								  <div class="jobs_select_templates_part">
+									   <div class="jobs_select_templates_part_left"><%= datas.level %></div>
+									   <div class="jobs_select_templates_part_right" id="reportViewLevel">   
+										    <select class="template_select">
+										        <option value ="0" selected="selected"><%= datas.allLevel %></option>	
+												<option value ="1"><%= datas.error %></option>
+												<option value ="2"><%= datas.danger %></option>
+										        <option value ="3"><%= datas.warn %></option>
+										        <option value="4"><%= datas.info %></option>
+										    </select>
+									   </div>
+								   </div>
+								     
+									<% if( datas.infos == 'Detail' ){%>
+									<div class="jobs_select_templates_part hostname_nodes_input_outter">	
+										<div class="jobs_select_templates_part_left"><%= datas.node %></div>
+
+										<div class="jobs_select_templates_part_right" id="reportViewNode">   
+                                             <textarea rows="2" cols="22"  placeholder="<%= datas.nodeInfo %>"></textarea>
+
+										</div>
+								    </div>
+									<%}  else {%>  
+										<div class="jobs_select_templates_part"></div>  
+										<%} %> 	
+								</div>
+							<%} %>  
+					</div>	
+				</div>
+			<%} %>
+			<div class="jobs_select_templates_condition_filter">
+				<div class="reportViewTplHead jobs_select_templates_period_inner_title"><%= datas.format %></div>
+				<div class="jobs_select_templates_part">
+				<div class="jobs_select_templates_part_left"><%= datas.fromatHeader %></div>
+						<div class="jobs_select_templates_part_right">
+							<input type="radio" name="format" value="xls" checked>&nbsp;&nbsp;Excel&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="format" value="pdf">&nbsp;&nbsp;PDF&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="format" value="html">&nbsp;&nbsp;HTML
+						</div>
+				</div>
+				<div class="jobs_select_templates_part" id="pageDirection" style="display: none;">
+				<div class="jobs_select_templates_part_left"><%= datas.pageDirection %>：</div>
+						<div class="jobs_select_templates_part_right">
+							<input type="radio" name="page_direction" value="vertical" checked>&nbsp;&nbsp;<%= datas.vertical %>&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="page_direction" value="landscape">&nbsp;&nbsp;<%= datas.landscape %>&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+				</div>
+			</div>
+		</form>
+	</script>
+	<script type="text/template" id="reportViewTplTime">
+		<% if( datas.timeFunc == 'custom' ){%>  
+			<div>
+				<input type="text" class="datePicker"  placeholder="<%= datas.startTime %>" name="startTime">
+				-
+				<input type="text" class="datePicker"  placeholder="<%= datas.endTime %>"  name="endTime">
+			</div>  
+			<% } else { %>       
+				<select class="template_select">
+					<option value ="hour"><%= datas.timeHour %></option>
+					<option value ="day"><%= datas.timeDay %></option>
+					<option value="week"><%= datas.timeWeek %></option>
+					<option value="month"><%= datas.timeMonth %></option>
+				</select>
+			<%} %>  
+	</script>
+	
+		<button class="btn btn-primary jobs_select_templates_submint_buttom" type="button" id="reportViewSubmit">{{nls.submit}}</button>
+
+	<div class="modal fade" id="reportProgressDialog" tabindex ="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog" style="margin-top:150px;width:300px">
+			<div class="modal-content">
+				<p style="text-align:center;margin-top:30px;margin-bottom:30px"><img src="/static/js/customUI/user/dashboard/job/resources/loading.gif" id="loading_img"></div></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="reportCreateResult" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog" style="margin-top:150px">
+			<div class="modal-content" style="width:475px;height:36px;">
+					<div class="the_icon_report_create_resoult"></div><div id="reportResult" class="reportResoult_style"></div>
+					<button style="margin-top:5px;margin-right:10px;" type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+            </div>
+		</div>
+	</div>
+
+</div>

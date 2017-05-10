@@ -1,0 +1,12 @@
+.select_sidebar{width:20%;height:705px;background-color:#ffffff;border:1px solid #e9e9e9;float:left;box-shadow: 0 0 5px rgba(0,0,0,.1);}
+#select_myModalLabel{font-family: Arial, "Microsoft YaHei", "微软雅黑", sans-serif;padding-left:16px;font-size:16px;text-align:left;background-color:#f2f2f2;width:100%;height:48px;line-height:48px;border-bottom:1px solid #e9e9e9;}
+.select_colllection{width:100%;height:86%;overflow:auto;border-bottom:0px solid #e9e9e9;}
+.select_mainContainer{width:80%;height:705px;background-color:#ffffff;float:left;}
+.select_head{width:100%;height:48px;background-color:#f2f2f2;font-size:3rem;color:#3C3C3C;border-bottom:1px solid #e9e9e9;}
+#select_foot{background-color:#f2f2f2;position: absolute;bottom: 0px;width:100%;height:48px;border-top:1px solid #e9e9e9;}
+#select_logo{margin-left:46px;margin-top:20px;margin-bottom:15px;width:200px;height:45px;}
+#select_head_title{width:200px;height:100%;line-height:48px;text-align:left;padding-left:30px;float:left;}
+#select_template_submit{float:left;width:100px;margin-left:35%;margin-top:0.5rem;}
+#select_template_reset{float:left;width:100px;background-color:#eee;margin-left:10%;border:1px solid #e9e9e9;margin-top:0.5rem;}
+
+

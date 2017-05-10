@@ -1,0 +1,67 @@
+<!--
+/*
+ * © Copyright Lenovo 2015.
+ *
+ * LIMITED AND RESTRICTED RIGHTS NOTICE:
+ *
+ * If data or software is delivered pursuant a General Services Administration
+ * "GSA" contract, use, reproduction, or disclosure is subject to
+ * restrictions set forth in Contract No. GS-35F-05925.
+*/
+-->
+{{!提交作业按钮开始}}
+<div class="col-lg-2 col-md-6 ui-submitjob-wrapper resource-container">
+  <div class="ui-dashboard-submitjob" id="job_submit_start">
+    <div class="ui-plus"><i class="fa fa-plus ui-plus-icon" style="font-size:5em;"></i></div>
+    <div class="ui-plus-text">{{nls.submitJob}}</div>
+  </div>
+</div>
+{{!提交作业按钮结束}}
+
+
+
+{{!轮播条形图开始}}
+<div class="col-lg-2 col-md-6  resource-container"  >
+	<div class="banner-slider" >
+{{!----轮播插件开始------}}	
+<div id="myCarousel" class="carousel slide">
+	<!-- 轮播（Carousel）项目 -->
+	<div class="carousel-inner" id="the_panel_carousel_inner">
+		<div class="item active" id="part_0"></div>
+	</div>
+	<!-- 轮播（Carousel）导航 -->
+	<a  id="it_left" class="carousel-control left carousel-control_new " href="#myCarousel" 
+	   data-slide="prev" >&lsaquo;</a>
+	<a id="it_right" class="carousel-control right carousel-control_new" href="#myCarousel" 
+	   data-slide="next"  >&rsaquo;</a>
+</div>
+{{!----轮播插件结束------}}		
+	</div>
+</div>
+{{!轮播条形图结束}}
+
+
+
+{{!网络吞吐条形图开始}}
+<div class="col-lg-2 col-md-6 resource-container"   >
+	<div  class="banner-slider" id="io-window-container1_inner" >
+		
+	</div>
+</div>
+{{!网络吞吐条形图结束}}
+
+
+
+{{!用户页面 环状图开始}}
+<div class="col-lg-2 col-md-6 resource-container">
+	<div id="clusterCPU-holder" class="resource-holder" ></div>
+</div>
+
+<div class="col-lg-2 col-md-6 resource-container">
+	<div id="clusterMemory-holder" class="resource-holder" ></div>
+</div>
+
+<div class="col-lg-2 col-md-6 resource-container">
+	<div id="storage-holder" class="resource-holder"></div>
+</div>
+{{!用户页面 环状图结束}}
